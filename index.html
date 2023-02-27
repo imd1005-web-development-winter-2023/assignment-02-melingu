@@ -1,29 +1,106 @@
 <!DOCTYPE html>
 <html lang="en-ca">
   <head>
-    <!-- Set the page title -->
     <title>Assignment 02</title>
 
-    <!-- Set the charset we're using to UTF-8 -->
     <meta charset="UTF-8" />
 
-    <!-- Set the screens default zoom / scale to 1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Specifies the document mode for Internet Explorer -->
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
     <link rel="stylesheet" href="reset.css" />
 
-    <!-- This is where all of our awesome CSS code goes -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--
+  
+    <div class="page">
+      <header>
+        <h2 class="sr-only">Site header</h2>
 
-      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+        <div class="header--banner">
+              <img class="header--banner--logo" src="logo.png" alt="logo" />
 
-    -->
+          <nav class="header--banner--nav">
+            <ul>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Cart</a></li>
+              <li><a href="#">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <a href="#">
+        <img
+          class="main--img"
+          src="main_image.png"
+          alt="Graphic ceramics"
+        />
+      </a>
+
+      <section>
+        <h2>New Products</h2>
+        <div class="main--products">
+          <ul>
+            
+            <li class="main--products--image"><a href="#"><img class="main--products--image1" src="image1.jpg" alt="image of product 1" height="150px" /></a>
+            <a href="#"><p>Minecraft Chicken</p></a></li>
+            <li class="main--products--image"><a href="#"><img class="main--products--image2" src="image2.jpg" alt="image of product 2" height="150px" /></a>
+            <a href="#"><p>Blueberry Cow Plate</p></a></li>
+            <li class="main--products--image"><a href="#"><img class="main--products--image3" src="image3.jpg" alt="image of product 3" height="150px" /></a>
+            <a href="#"><p>Frog Ring</p></a></li>
+            <li class="main--products--image"><a href="#"><img class="main--products--image4" src="image4.jpg" alt="image of product 4" height="150px" /></a>
+            <a href="#"><p>Purple Checkered Heart</p></a></li>
+
+          </ul>
+          <a href="#">
+          <button>View all</button>
+        </a>
+        </div>
+      </section>
+
+      <section>
+        <div class="main--preorder">
+          <a href="#">
+          <img class="main--preorder--image" src="preorder.png" alt="image of products for preorder" />
+          <button>Pre-order now!</button>
+        </a>
+        </div>
+      </section>
+
+      <section>          
+          <h3>Subscribe for the latest news and deals!</h3>
+        <form class="main--form">
+          <label class="sr-only" for="users">Enter e-mail</label>
+          <input
+            type="users"
+            id="users"
+            name="users"
+            placeholder="Enter e-mail"
+          />
+          <button type="submit">Subscribe!</button>
+        </form>
+      </section>
+      </main>
+
+      <!-- Our Footer Area -->
+      <footer>
+        <h2 class="sr-only">Site footer</h2>
+
+        <nav class="footer--nav">
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Socials</a></li>
+            <li class="footer--nav--push"><a href="#">Contact</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>
